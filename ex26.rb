@@ -1,4 +1,4 @@
-# TEST: Need to fix the garbage code
+# TEST: Need to fix the garbage code from http://learnrubythehardway.org/book/exercise26.txt
 
 # Just a module
 module Ex26
