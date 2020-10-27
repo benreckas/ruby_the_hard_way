@@ -3,12 +3,12 @@ puts 'You\'d need to know \'bout escapes wiuth \\ that do \n newlines and \t tab
 
 # the <<END is a "heredoc". See the Student Questions
 poem = <<END
-\tThe lovely world
-with logic so firmly planted
-cannot discern \n the needs of love
-nor comprehend passion from intuition
-and requires and explinations
-\n\t\twhere there is none.
+  \tThe lovely world
+  with logic so firmly planted
+  cannot discern \n the needs of love
+  nor comprehend passion from intuition
+  and requires and explinations
+  \n\t\twhere there is none.
 END
 
 puts '----------------'
