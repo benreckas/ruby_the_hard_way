@@ -1,3 +1,4 @@
+# rubocop:disable Style/WordArray,Style/For
 the_count = [1, 2, 3, 4, 5]
 fruits = ['apples', 'oranges', 'pears', 'apricots']
 change = [1, 'pennies', 'dimes', 3, 'quarters']
@@ -24,11 +25,13 @@ change.each { |i| puts "I got #{i}" }
 elements = []
 
 # then use the range operator to do 0 to 5 counts
-(0..5).each do  |i|
+# `..` includes final number; `...` excludes final number
+(0..5).each do |i|
   puts "adding #{i} to the list."
   # pushes the i variable on the *end* of the list
-  elements.push(i)
+  elements << i
 end
 
 # now we can print them out too
 elements.each { |i| puts "Element was: #{i}" }
+# rubocop:enable Style/WordArray,Style/For
