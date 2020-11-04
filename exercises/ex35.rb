@@ -5,15 +5,13 @@ def gold_room
   print '> '
 
   choice = $stdin.gets.chomp
+  number = Integer(choice) rescue false
 
-  # this line has a bug, so fix it
-  if choice.include?('0') || choice.include?('1')
-    how_much = choice.to_i
-  else
+  unless number
     dead('Man, learn to type a number.')
   end
 
-  if how_much < 50
+  if number < 50
     puts "Nice, you're not greedy, you win!"
     exit(0)
   else
